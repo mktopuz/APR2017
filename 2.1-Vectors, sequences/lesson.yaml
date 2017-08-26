@@ -24,8 +24,8 @@
 - Class: cmd_question
   Output: Let`s assign the result of log (4 + 5) to a new variable called x. This can be read as 'x gets log 4 plus 5'. Give it a try now.
   CorrectAnswer: x <- log (4 + 5)
-  AnswerTests: any_of_exprs('x <- log (4 + 5)', 'x <- log (5 + 4)', 'x <- log (9)')
-  Hint: Type x <- log(4 + 5) or x <- log(5 + 4) . It's important to include a single space on each side of
+  AnswerTests: omnitest(correctExpr=" x <- log (4 + 5)"
+  Hint: Type x <- log(4 + 5). It's ok to include a single space on each side of
     the assignment operator, but do NOT put a space between the `<` and the `-` that
     form the arrow.
     
