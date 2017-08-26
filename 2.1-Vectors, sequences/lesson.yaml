@@ -135,9 +135,9 @@
     as my_seq.
 
 - Class: cmd_question
-  Output: There are several ways we could do this. One possibility is to combine
+  Output: "There are several ways we could do this. One possibility is to combine
     the `:` operator and the length() function like this: 1:length(my_seq). Give that
-    a try.
+    a try."
   CorrectAnswer: 1:length(my_seq)
   AnswerTests: omnitest(correctExpr='1:length(my_seq)')
   Hint: Try 1:length(my_seq), without assigning the result to a new variable.
