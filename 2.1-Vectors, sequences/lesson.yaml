@@ -38,8 +38,7 @@
 - Class: cmd_question
   Output: The easiest way to create a vector is with the c() function, which stands
     for 'concatenate' or 'combine'. To create a vector containing the numbers 1.1,
-    9, and 3.14, type c(1.1, 9, 3.14). Try it now and store the result in a variable
-    called z.
+    9, and 3.14. Try it now and store the result in a variable called z.
   CorrectAnswer: z <- c(1.1, 9, 3.14)
   AnswerTests: omnitest(correctExpr='z <- c(1.1, 9, 3.14)')
   Hint: Inputting z <- c(1.1, 9, 3.14) will assign the vector (1.1, 9, 3.14) to a
@@ -77,7 +76,7 @@
 
 - Class: cmd_question
   Output: Determine which directory your R session is using as its current 
-    working directory using getwd().
+    working directory.
   CorrectAnswer: getwd()
   AnswerTests: omnitest(correctExpr='getwd()')
   Hint: Type getwd() to determine the current working directory.    
@@ -92,7 +91,7 @@
   Output: Let`s try 4:-2 and see what happens
   CorrectAnswer: '4:-2'
   AnswerTests: omnitest(correctExpr='4:-2')
-  Hint: Type 4:-2 with no spaces. Make sure to use a regular colon and NOT a semi-colon.
+  Hint: Type 4:-2. Make sure to use a regular colon and NOT a semi-colon.
 
 - Class: text
   Output: Both examples have steps of 1. To make bigger or smaller steps in a sequence, use the seq() function. us every integer between (and including) 3 and 7. Here by argument allows you to specify the amount by which the numbers should increase or decrease
@@ -136,9 +135,9 @@
     as my_seq.
 
 - Class: cmd_question
-  Output: 'There are several ways we could do this. One possibility is to combine
+  Output: There are several ways we could do this. One possibility is to combine
     the `:` operator and the length() function like this: 1:length(my_seq). Give that
-    a try.'
+    a try.
   CorrectAnswer: 1:length(my_seq)
   AnswerTests: omnitest(correctExpr='1:length(my_seq)')
   Hint: Try 1:length(my_seq), without assigning the result to a new variable.
@@ -203,8 +202,8 @@
 - Class: cmd_question
   Output: Let`s create a vector called x that contains only odd numbers ordered up to 100.Hint-- remember seq(from, to, by), or type skip() to see the answer
   CorrectAnswer: x<-seq(1,100,2)
-  AnswerTests: omnitest(any_of_exprs='x<-seq(1,100,2)', "x<-seq(from= 1,to= 100,by=2)")
-  Hint: One way to create type x<-seq(1,100,2) to craete the vector.
+  AnswerTests: omnitest(correctExpr= "x<-seq(1,100,2)")
+  Hint: One way to create type x<-seq(1,100,2) to craete the vector, if you use x<-seq(from= 1,to= 100,by=2) it is correct too but for now use the former one.
 
 - Class: text
   Output: The way you tell R that you want to select some particular elements (i.e. a 'subset') from a vector is by placing an 'index vector' in square brackets immediately following the name of the vector.
@@ -216,7 +215,7 @@
   Hint: View the first ten elements of x with x[1:10].
   
 - Class: cmd_question
-  Output: Now let`s assign values > 5 and <50 to NA (missing value), try x[(x>5)&(x<50)]<-NA
+  Output: Now let`s assign values > 5 and <50 to NA (missing value)
   CorrectAnswer: x[(x>5)&(x<50)]<-NA
   AnswerTests: omnitest(correctExpr='x[(x>5)&(x<50)]<-NA')
   Hint: Type x[(x>5)&(x<50)]<-NA.
@@ -396,12 +395,4 @@
   Hint: Use v1[c("Kanter", "Adams")] to get only the elements of v1 named "Kanter" and "Adams".
 
 - Class: text
-  Output: Now you know all four methods of subsetting data from vectors. Different approaches are best in different scenarios and when in doubt, try it out! See you next time!
-
-
-- Class: mult_question
-  Output: Would you like to inform someone about your successful completion of this lesson via email?
-  CorrectAnswer: NULL
-  AnswerChoices: Yes; No
-  AnswerTests: notify()
-  Hint: NULL
+  Output: Now you know all four methods of subsetting data from vectors. Different approaches are best in different scenarios and when in doubt, try it out! See you next time! Dont forget to copy your exercise and paste into text editor (MS-word). You will have another exercise today. Submit both together
