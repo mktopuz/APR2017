@@ -369,7 +369,7 @@
 - Class: cmd_question
   Output: Now, let's check that v1 and v2 are the same by passing them as arguments to the identical() function, try identical(v1, v2).
   CorrectAnswer: identical(v1, v2)
-  AnswerTests: any_of_exprs('identical(v1, v2)', 'identical(v2, v1)')
+  AnswerTests: omnitest('identical(v1, v2)')
   Hint: The identical() function tells us if its first two arguments are, well, identical.
 
 - Class: text
