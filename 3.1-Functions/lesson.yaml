@@ -58,7 +58,7 @@
     x, and return x without modifying it. Delete the pound
     sign so that x is returned without any modification. Make sure to save your
     script before you type submit().
-  AnswerTests: testfunc1()
+  AnswerTests: test_func1()
   Hint: Make sure to delete the pound sign so the last expression in the function is just x.
   Script: boring_function.R
 
