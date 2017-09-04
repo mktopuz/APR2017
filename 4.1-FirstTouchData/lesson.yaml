@@ -11,11 +11,10 @@
     What is the format of the data? What are the dimensions? What are the variable names? How are the variables stored? Are there missing data? Are there any flaws in the data?
 
 - Class: text
-  Output: This lesson will teach you how to answer these questions and more using R's built-in functions. We'll be using a dataset shares publicly available data related to the ongoing Zika epidemic. 
-    It is being provided as a resource to the scientific community engaged in the public health response. The data provided here is not official and should be considered provisional and non-exhaustive. (https://www.kaggle.com/cdc/zika-virus-epidemic).
+  Output: This lesson will teach you how to answer these questions and more using R's built-in functions. We'll be using a dataset shares plants information.
 
 - Class: cmd_question
-  Output: I've stored the data for you in a variable called cdc_zika. Type ls() to list the variables in your workspace.
+  Output: I've stored the data for you in a variable called plants. Type ls() to list the variables in your workspace.
   CorrectAnswer: ls()
   AnswerTests: omnitest(correctExpr='ls()')
   Hint: Use ls() to list the variables in your workspace.
