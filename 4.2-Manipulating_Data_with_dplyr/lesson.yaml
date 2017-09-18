@@ -1,10 +1,10 @@
 - Class: meta
   Course: APR2017
   Lesson: Manipulating Data with dplyr
-  Author: Nick Carchedi
+  Author: Kazim Topuz
   Type: Standard
-  Organization: JHU Biostat
-  Version: 2.2.12
+  Organization: mktopuz
+  Version: 1.0.0
 
 - Class: text
   Output: In this lesson, you'll learn how to manipulate data using dplyr. dplyr is a fast and powerful R package written by Hadley Wickham and Romain Francois that provides a consistent and concise grammar for manipulating tabular data.
@@ -162,7 +162,7 @@
 - Class: cmd_question
   Output: You can specify as many conditions as you want, separated by commas. For example filter(cran, r_version == "3.1.1", country == "US") will return all rows of cran corresponding to downloads from users in the US running R version 3.1.1. Try it out.
   CorrectAnswer: filter(cran, r_version == "3.1.1", country == "US")
-  AnswerTests: any_of_exprs('filter(cran, r_version == "3.1.1", country == "US")', 'filter(cran, country == "US", r_version == "3.1.1")')
+  AnswerTests: omnitest('filter(cran, r_version == "3.1.1", country == "US")')
   Hint: filter(cran, r_version == "3.1.1", country == "US") will return all rows of cran corresponding to downloads from users in the US running R version 3.1.1. Don't forget the quotes around 3.1.1 and US!
 
 - Class: cmd_question
@@ -174,19 +174,19 @@
 - Class: cmd_question
   Output: Edit your previous call to filter() to instead return rows corresponding to users in "IN" (India) running an R version that is less than or equal to "3.0.2". The up arrow on your keyboard may come in handy here. Don't forget your double quotes!
   CorrectAnswer: filter(cran, r_version <= "3.0.2", country == "IN")
-  AnswerTests: any_of_exprs('filter(cran, r_version <= "3.0.2", country == "IN")', 'filter(cran, country == "IN", r_version <= "3.0.2")')
+  AnswerTests: omnitest('filter(cran, r_version <= "3.0.2", country == "IN")')
   Hint: filter(cran, r_version <= "3.0.2", country == "IN") will return all rows for which r_version is less than or equal to "3.0.2" and country is equal to "IN".
 
 - Class: cmd_question
   Output: Our last two calls to filter() requested all rows for which some condition AND another condition were TRUE. We can also request rows for which EITHER one condition OR another condition are TRUE. For example, filter(cran, country == "US" | country == "IN") will gives us all rows for which the country variable equals either "US" or "IN". Give it a go.
   CorrectAnswer: filter(cran, country == "US" | country == "IN")
-  AnswerTests: any_of_exprs('filter(cran, country == "US" | country == "IN")', 'filter(cran, country == "IN" | country == "US")')
+  AnswerTests: omnitest('filter(cran, country == "US" | country == "IN")')
   Hint: filter(cran, country == "US" | country == "IN") will return all rows for which country equals "US" or "IN". The `|` symbol (called a pipe operator) probably shares a key with the backslash on your keyboard.
 
 - Class: cmd_question
   Output: 'Now, use filter() to fetch all rows for which size is strictly greater than (>) 100500 (no quotes, since size is numeric) AND r_os equals "linux-gnu". Hint: You are passing three arguments to filter(): the name of the dataset, the first condition, and the second condition.'
   CorrectAnswer: filter(cran, size > 100500, r_os == "linux-gnu")
-  AnswerTests: any_of_exprs('filter(cran, size > 100500, r_os == "linux-gnu")', 'filter(cran, r_os == "linux-gnu", size > 100500)')
+  AnswerTests: omnitest('filter(cran, size > 100500, r_os == "linux-gnu")')
   Hint: This is a tricky one. filter(cran, size > 100500, r_os == "linux-gnu") will give us all rows for which size is strictly greater than 100500 and r_os is "linux-gnu".
 
 - Class: text
@@ -255,7 +255,7 @@
 - Class: cmd_question
   Output: Take a look at cran3 now.
   CorrectAnswer: cran3
-  AnswerTests: any_of_exprs('cran3', 'print(cran3)')
+  AnswerTests: omnitest('cran3')
   Hint: Type cran3 to view its contents.
 
 - Class: text
