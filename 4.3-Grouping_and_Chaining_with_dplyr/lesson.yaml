@@ -45,7 +45,7 @@
 - Class: cmd_question
   Output: Our first goal is to group the data by package name. Bring up the help file for group_by().
   CorrectAnswer: ?group_by
-  AnswerTests: any_of_exprs('?group_by', 'help(group_by)')
+  AnswerTests: omnitest('?group_by')
   Hint: Use ?group_by to bring up the documentation.
 
 - Class: cmd_question
@@ -57,7 +57,7 @@
 - Class: cmd_question
   Output: Let's take a look at by_package. Print it to the console.
   CorrectAnswer: by_package
-  AnswerTests: any_of_exprs('by_package', 'print(by_package)')
+  AnswerTests: omnitest('by_package')
   Hint: Type by_package to view its contents.
 
 - Class: text
@@ -69,7 +69,7 @@
 - Class: cmd_question
   Output: That's exactly what you'll get if you use summarize() to apply mean(size) to the grouped data in by_package. Give it a shot.
   CorrectAnswer: summarize(by_package, mean(size))
-  AnswerTests: any_of_exprs('summarize(by_package, mean(size))', 'summarise(by_package, mean(size))')
+  AnswerTests: omnitest('summarize(by_package, mean(size))')
   Hint: 'Call summarize() with two arguments: by_package and mean(size).'
 
 - Class: text
@@ -84,7 +84,7 @@
 - Class: cmd_question
   Output: Print the resulting tbl, pack_sum, to the console to examine its contents.
   CorrectAnswer: pack_sum
-  AnswerTests: any_of_exprs('pack_sum', 'print(pack_sum)')
+  AnswerTests: omnitest('pack_sum')
   Hint: Type pack_sum to view its contents.
 
 - Class: text
@@ -111,7 +111,7 @@
 - Class: cmd_question
   Output: Let's take a look at top_counts. Print it to the console.
   CorrectAnswer: top_counts
-  AnswerTests: any_of_exprs('top_counts', 'print(top_counts)')
+  AnswerTests: omnitest('top_counts')
   Hint: Type top_counts to view its contents.
 
 - Class: text
