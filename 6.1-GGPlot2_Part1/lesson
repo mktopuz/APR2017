@@ -7,10 +7,6 @@
   Version: 2.2.0
 
 - Class: text
-  Output: "GGPlot2_Part1. (Slides for this and other Data Science courses may be found at github https://github.com/DataScienceSpecialization/courses/. If you care to use them, they must be downloaded as a zip file and viewed locally. This lesson corresponds to 04_ExploratoryAnalysis/ggplot2.)"
-
-
-- Class: text
   Output:  In another lesson, we gave you an overview of the three plotting systems in R. In this lesson we'll focus on the third and newest plotting system in R, ggplot2.  As we did with the other two systems, we'll focus on creating graphics on the screen device rather than another graphics device.
 
 - Class: text
@@ -21,31 +17,6 @@
 
 - Class: text
   Output:  The ggplot2 package "is composed of a set of independent components that can be composed in many different ways. ... you can create new graphics that are precisely tailored for your problem." These components include aesthetics which are attributes such as colour, shape, and  size, and geometric objects or geoms such as points, lines, and bars.  
-
-- Class: text
-  Output: Before we delve into details, let's review the other 2 plotting systems.
-
-- Class: mult_question
-  Output: Recall what you know about R's base plotting system. Which of the following does NOT apply to it? 
-  AnswerChoices: Start with plot (or similar) function; Use annotation functions to add/modify (text, lines, points, axis); It is convenient and mirrors how we think of building plots and analyzing data; Can easily go back once the plot has started (e.g., to adjust margins or correct a typo)
-  CorrectAnswer: Can easily go back once the plot has started (e.g., to adjust margins or correct a typo)
-  AnswerTests: omnitest(correctVal='Can easily go back once the plot has started (e.g., to adjust margins or correct a typo)')
-  Hint: Which choice is the only one which looks backward? 
-
-
-- Class: mult_question
-  Output: Recall what you know about R's lattice plotting system. Which of the following does NOT apply to it? 
-  AnswerChoices:  Plots are created with a single function call (xyplot, bwplot, etc.); Most useful for conditioning types of plots and putting many panels on one plot; Margins and spacing are set automatically because entire plot is specified at once; Can always add to the plot once it is created
-  CorrectAnswer: Can always add to the plot once it is created
-  AnswerTests: omnitest(correctVal='Can always add to the plot once it is created')
-  Hint: Which choice is the only one which is inconsistent with the other three? 
-
-- Class: mult_question
-  Output: If we told you that ggplot2 combines the best of base and lattice, that would mean it ...?  
-  AnswerChoices: Automatically deals with spacings, text, titles but also allows you to annotate; Like lattice it allows for multipanels but more easily and intuitively; Its default mode makes many choices for you (but you can customize!); All of the others  
-  CorrectAnswer: All of the others
-  AnswerTests: omnitest(correctVal='All of the others')
-  Hint: Which choice is the only one that encompasses the other three? 
 
 - Class: text
   Output: Yes, ggplot2 combines the best of base and lattice. It allows for multipanel (conditioning) plots (as lattice does) but also post facto annotation (as base does), so you can add titles and labels. It uses the low-level grid package (which comes with R) to draw the graphics. As part of its grammar philosophy, ggplot2 plots are composed of aesthetics (attributes such as size, shape, color) and geoms (points, lines, and bars), the geometric objects you see on the plot.
@@ -208,11 +179,3 @@
 
 - Class: text
   Output: Congrats! You've finished plot 1 of  ggplot2. In the next lesson the plot thickens.
-
-- Class: mult_question
-  Output: Would you like to inform someone about your successful completion of 
-    this lesson via email?
-  CorrectAnswer: NULL
-  AnswerChoices: Yes; No
-  AnswerTests: notify()
-  Hint: NULL
