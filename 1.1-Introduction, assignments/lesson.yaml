@@ -1,32 +1,46 @@
 - Class: meta
-  Course: APR2017
+  Course: Seminar in R
   Lesson: Intro, assignments
   Author: Kazim Topuz
   Type: Graduate
-  Organization: Center for Health Systems Innovation
+  Organization: University of Tulsa
   Version: 1.0.0
 
 - Class: text
-  Output: Welcome to the Interactive R learning tool.
-    The lectures are cumulative, so it is better for you to follow the order. After you exit, it will remember where you left off. Let`s get started!
+  Output: Welcome to the Interactive R learning tool. Dr. K. (thats me!) probably asked you to complete the first interactive lecture with him. I believe the best way to learn R (or any other programming language is practise, hands on training).
+    The lectures are cumulative, so it is better for you to follow the sequence. After you exit, the R should remember where you left off. If it does not, something is wrong! Let`s get started!
+
+ 
+- Class: text
+  Output: In this lesson, we will explore some basic building blocks of the R programming- Class: meta
+  Course: Seminar in R
+  Lesson: Intro, assignments
+  Author: Kazim Topuz
+  Type: Graduate
+  Organization: University of Tulsa
+  Version: 1.0.0
+
+- Class: text
+  Output: Welcome to the Interactive R learning tool. Dr. K. (thats me!) probably asked you to complete the first interactive lecture with him. I believe the best way to learn R (or any other programming language is practise, hands on training).
+    The lectures are cumulative, so it is better for you to follow the sequence. After you exit, the R should remember where you left off. If it does not, something is wrong! Let`s get started!
 
  
 - Class: text
   Output: In this lesson, we will explore some basic building blocks of the R programming
-    language.
+    language. You will do similar exercises just like I did in class. 
 
 - Class: text
   Output: If at any point you'd like more information on a particular topic related
     to R, you can type help.start() at the prompt, which will open a menu of resources
     (either within RStudio or your default web browser, depending on your setup).
-    Alternatively, a simple web search often yields the answer you're looking for.
+    Alternatively, a simple web search often yields the answer you're looking for, or find Dr. K.:)
 
 - Class: cmd_question
-  Output: Let's begin with basics. To get familiar with R coding environment, start with some basic calculations. 
-          R console can be used as an interactive calculator too. Type the following in your console 4 + 5 and press Enter.
+  Output: Let's begin with basic. To get familiar with R coding environment, start with some basic calculations. 
+          R console can be used as an interactive calculator. Type the following in your console 4 + 5 and press Enter.
   CorrectAnswer: 4 + 5
   AnswerTests: omnitest(correctExpr='4 + 5')
-  Hint: Type 4 + 5 and press Enter.
+  Hint: Type 4 + 5 and press Enter (not a rocket science:).
   
 - Class: cmd_question
   Output: Let's do more practise. Try log(4+5) and see the result.
@@ -35,9 +49,10 @@
   Hint: Type log (4+5) and press Enter.
 
 - Class: text
-  Output: R simply prints the result of 2.197225 by default. However, R is a programming
+  Output: R can take log too! Isnt that amazing! So R simply prints the result of 2.197225 by default. However, R is a programming
     language and often the reason we use a programming language as opposed to a calculator
     is to automate some process or avoid unnecessary repetition.
+    language.
 
 - Class: text
   Output: In this case, we may want to use our result from above in a second calculation.
