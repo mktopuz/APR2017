@@ -12,20 +12,6 @@
 
  
 - Class: text
-  Output: In this lesson, we will explore some basic building blocks of the R programming- Class: meta
-  Course: Seminar in R
-  Lesson: Intro, assignments
-  Author: Kazim Topuz
-  Type: Graduate
-  Organization: University of Tulsa
-  Version: 1.0.0
-
-- Class: text
-  Output: Welcome to the Interactive R learning tool. Dr. K. (thats me!) probably asked you to complete the first interactive lecture with him. I believe the best way to learn R (or any other programming language is practise, hands on training).
-    The lectures are cumulative, so it is better for you to follow the sequence. After you exit, the R should remember where you left off. If it does not, something is wrong! Let`s get started!
-
- 
-- Class: text
   Output: In this lesson, we will explore some basic building blocks of the R programming
     language. You will do similar exercises just like I did in class. 
 
