@@ -4,7 +4,7 @@
   Author: Kazim Topuz
   Type: Graduate
   Organization: University of Tulsa
-  Version: 1.0.0
+  Version: 1.0.1
 
 - Class: text
   Output: Welcome to the Interactive R learning tool. Dr. K. (thats me!) probably asked you to complete the first interactive lecture with him. I believe the best way to learn R (or any other programming language is practise, hands on training).
