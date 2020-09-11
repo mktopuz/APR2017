@@ -7,7 +7,7 @@
 
 # Put initialization code in this file.
 path_to_course <- file.path(.get_course_path(),
-	"APR2017","5.2-Exploratory_Graphs")
+	"AnalyticsProgramming2020","5.2-Exploratory_Graphs")
 pollution <- read.csv(paste(path_to_course,"avgpm25.csv",sep="/"), colClasses = c("numeric", "character", "factor", "numeric", "numeric"))
 high <- pollution$pm25[pollution$pm25>15]
 low <- pollution$pm25[pollution$pm25<5]
