@@ -13,6 +13,6 @@ data(mpg)
 state <- data.frame(state.x77, region = state.region)
 # Put initialization code in this file.
 path_to_course <- file.path(.get_course_path(),
-	"APR2017","5.4-Base_Plotting_System")
+	"AnalyticsProgramming2020","5.4-Base_Plotting_System")
 try(dev.off(), silent=TRUE)
 plot.new()
