@@ -59,7 +59,7 @@ students2 <- data.frame(
 }
 
 .lesson_path <- file.path(.get_course_path(),
-                          'APR2017',
+                          'AnalyticsProgramming2020',
                           '4.4-Tidying_Data_with_tidyr')
 
 .path2s3 <- file.path(.lesson_path, 'students3.csv')
