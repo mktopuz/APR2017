@@ -15,7 +15,7 @@
 
 # Make path to csv available to user
 path2csv <- file.path(.get_course_path(),
-                      'APR2017',
+                      'AnalyticsProgramming2020',
                       '4.2-Manipulating_Data_with_dplyr',
                       '2014-07-08.csv')
 
