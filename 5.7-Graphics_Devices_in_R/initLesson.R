@@ -9,7 +9,7 @@ library(datasets)
 }
 
 path_to_course <- file.path(.get_course_path(),
-	"APR2017","5.7-Graphics_Devices_in_R")
+	"AnalyticsProgramming2020","5.7-Graphics_Devices_in_R")
 
 try(dev.off(),silent=TRUE)
 plot.new()
