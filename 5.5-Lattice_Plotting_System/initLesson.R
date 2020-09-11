@@ -17,7 +17,7 @@ plot.new()
 
 pathtofile <- function(fileName){
   mypath <- file.path(.get_course_path(),
-  	"APR2017","5.5-Lattice_Plotting_System",
+  	"AnalyticsProgramming2020","5.5-Lattice_Plotting_System",
                       fileName)
 }
 fxfer <- function(fileName){
