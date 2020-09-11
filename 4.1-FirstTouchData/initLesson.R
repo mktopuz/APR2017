@@ -7,7 +7,7 @@
 
 # Path to data
 .datapath <- file.path(.get_course_path(),
-                       'AnalyticsProgramming', '4.1-FirstTouchData',
+                       'AnalyticsProgramming2020', '4.1-FirstTouchData',
                        'plant-data.txt')
 # Read in data
 plants <- read.csv(.datapath, strip.white=TRUE, na.strings="")
